@@ -7,3 +7,5 @@ I koden bliver maks-alderen hentet som et kommandolinje-argument via argv[1]. Hv
 
 så bliver 15 den maksimale alder, som programmet filtrerer efter. Herefter åbner programmet inputfilen, eller bruger stdin hvis ingen fil er angivet. Programmet læser én linje ad gangen med fgets, opdeler den med strtok i navn og alder, og kontrollerer om linjen er korrekt formateret. Hvis der mangler alder, hvis linjen er tom, eller hvis alderen ikke kan konverteres til et tal, udskrives en fejlmeddelelse til stderr, og linjen springes over.
 Når programmet møder en gyldig linje og alderen er mindre end eller lig med grænsen, skrives linjen videre til output – enten til en fil eller til stdout. På den måde bliver kun de personer, der opfylder filteret, gemt i den endelige outputfil. Programmet afsluttes ved at lukke eventuelle åbne filer og returnere succes.
+
+I vedhæftet out.csv har jeg filtreret med alderen 19 år.
